@@ -1,23 +1,18 @@
-import { ReactNode } from "react"
+import { ReactNode } from 'react';
 
 export type Todo = {
-    text: string
-}
+  text: string;
+};
 
 export type TodoState = {
-    todo: Todo[]
-}
+  todo: Todo[];
+};
 
 export type TodoActions = {
-    type: string
-    payload: Todo
-}
-
-export type Actions = {
-    type: string
-    payload: any
-}
+  type: string;
+  payload: Todo;
+};
 
 export type ProviderProps = {
-    children: ReactNode
-}
+  children: ReactNode;
+};

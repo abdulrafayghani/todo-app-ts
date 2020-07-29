@@ -5,12 +5,12 @@ export const Reducer = (state: TodoState, action: TodoActions) => {
     case 'ADD_TODO':
       return {
         ...state,
-        todo: [action.payload, ...state.todo],
+        todo: [action.payload, ...state.todo]
       };
     case 'DELETE_TODO':
       return {
         todo: [
-          ...state.todo.filter((item) => item !== action.payload),
+          ...state.todo.filter((item) => item.text !== action.payload.text),
         ],
       };
     default:
